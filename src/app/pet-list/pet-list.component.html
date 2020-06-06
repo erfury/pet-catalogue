@@ -1,0 +1,41 @@
+<div class="container">
+  <h2 class="display-2 my-3">My pets</h2>
+  <a class="btn btn-primary" routerLink="/pets/new" role="button">New pet</a>
+  <a class="btn btn-danger" routerLink="/pet-table" role="button">Table</a>
+
+  <div class="row">
+    <div class="col">
+      <div class="list-group">
+        <a *ngFor="let pet of pets" class="list-group-item list-group-item-action"
+          (click)="selectedPet = pet"
+          [class.selected]="pet === selectedPet"
+          [class.list-group-item-danger]="pet.isalive === 'N'"
+          [class.list-group-item-success]="pet.isalive === 'Y'"
+          [routerLink]="['/pets', pet.id, 'edit']"
+        >
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <div class="d-flex w-100 justify-content-between align-items-center" >
+                <h5 class="mb-1">{{ pet.name }}</h5>
+                <img src="assets/img/icon.jpg" alt="icon" class="img-thumbnail" width="80" height="80">
+            </div>
+            <span class="badge" [class.badge-success]="pet.isalive === 'Y'"
+              [class.badge-danger]="pet.isalive === 'N'">{{ pet.isalive==='Y'? 'Alive' : 'Dead' }}</span>
+          </div>
+          <p class="mb-1">
+            {{ pet.note }}
+          </p>
+          <small class="d-flex flex-column ">
+            <i class="fas fa-map-marker-alt"></i> {{ pet.species }}
+            <i class="fas fa-calendar-alt"></i> {{pet.birthday}}
+          </small>
+        </a>
+      </div>
+    </div>
+
+    <!--
+    <div class="col" *ngIf="selectedPet">
+      <app-issue-form [pet]="selectedPet" (save)="handleFormSubmit($event)"></app-issue-form>
+    </div>
+    -->
+  </div>
+</div>

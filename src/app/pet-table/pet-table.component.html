@@ -1,0 +1,25 @@
+<div class="container">
+  <h2 class="display-2 my-3">My pets</h2>
+  <a class="btn btn-primary" routerLink="/pets/new" role="button">New pet</a>
+  <a class="btn btn-danger" routerLink="/pets" role="button">List</a>
+  <table class="table table-striped table-responsive-md btn-table">
+    <thead>
+      <tr>
+        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr tableCol *ngFor="let el of elements">
+        <th scope="row">{{el.id}}</th>
+        <td>{{el.name}}</td>
+        <td>{{el.species}}</td>
+        <td>{{el.birthday}}</td>
+        <td>{{el.isalive}}</td>
+        <td>{{el.note}}</td>
+        <td>{{el.death}}</td>
+        <td><button mdbBtn color="indigo" size="sm" mdbWavesEffect type="button" class="m-0"
+          [routerLink]="['/pets', el.id, 'edit']">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
