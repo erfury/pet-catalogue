@@ -23,23 +23,23 @@ In the tasks every page should contain a navigation bar on the top and a route s
 
 Points and grades: 0-19: 1, 20-27: 2, 28-36: 3, 37-43: 4, 44-50: 5.
 
-# The task
+The task
 Pet catalogue
 
-# Navigation bar In the navigation bar the following elements should take place: (5 points)
+Navigation bar In the navigation bar the following elements should take place: (5 points)
 
 Brand or logo: clicking on it the application navigates to the main page
 My pets: navigates to the Pets page
 About: navigates to the About page
 Main page The main page introduces the application with some static text and image. The only dynamic content is the number of living and already died pets (e.g. You have 5 pets. And you said goodbye to 2 pets.). (10 points)
 
-# About The about page shows the details of the author of the application: name, neptun id, email address. (5 points)
+About The about page shows the details of the author of the application: name, neptun id, email address. (5 points)
 
-# Pets The pets page shows the list of the pets in a table: name of the pet, the species, date of birth, date of death and a note. Above the list a “New pet” link directs to the Add page. Beside every row an “Edit” link directs to the Edit page. (10 points)
+Pets The pets page shows the list of the pets in a table: name of the pet, the species, date of birth, date of death and a note. Above the list a “New pet” link directs to the Add page. Beside every row an “Edit” link directs to the Edit page. (10 points)
 
-# Add new pet On this page you can add a new pet to the catalogue through a form: name of the pet, the species, date of birth and a note. After a successful save the page redirects to the Pets page. (10 points)
+Add new pet On this page you can add a new pet to the catalogue through a form: name of the pet, the species, date of birth and a note. After a successful save the page redirects to the Pets page. (10 points)
 
-# Edit a pet entry On this page you can edit the selected pet through a prefilled form: name of the pet, the species, date of birth, date of death and a note. After a successful save the page redirects to the Pets page. (10 points)
+Edit a pet entry On this page you can edit the selected pet through a prefilled form: name of the pet, the species, date of birth, date of death and a note. After a successful save the page redirects to the Pets page. (10 points)
 
 ## Development server
 
