@@ -1,7 +1,7 @@
 # PetCatalogue
-
+# question
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
-Create an Angular application with a REST API backend. The backend server should be created with Maven and Java Spring Boot. The data should be stored in a H2 database. Please, seed the database with some data which can help demonstrate the following tasks! The client application should be written in Angular. Only Angular and Spring Boot Maven projects are accepted (like on the practice lessons). The deadline is strict, no late submissions are accepted! The tasks are similar to the example application created on the practice lessons, no other knowledge is necessary to solve them!
+Create an Angular application with a REST API backend. The backend server IS created with Maven and Java Spring Boot. The data is stored in a H2 database. Please, seed the database with some data which can help demonstrate the following tasks! The client application should be written in Angular. Only Angular and Spring Boot Maven projects are accepted (like on the practice lessons). The deadline is strict, no late submissions are accepted! The tasks are similar to the example application created on the practice lessons, no other knowledge is necessary to solve them!
 
 Create the following folder structure:
 
